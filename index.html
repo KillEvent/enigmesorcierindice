@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réponses aux Énigmes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: none;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" id="reponseA">
+    <h1>Réponse à l'énigme A</h1>
+    <p>Voici la réponse à l'énigme A: Le code en morse veut dire "un coffre avec un code à 4 chiffres protège le bijou". Les prochaines énigmes permettront de trouver des chiffres pour ouvrir le coffre.</p>
+</div>
+
+<div class="container" id="reponseB">
+    <h1>Réponse à l'énigme B</h1>
+    <p>Voici la réponse à l'énigme B: Lorsqu'on relie les flammes des bougies de la plus petite à la plus grande, nous obtenons le chiffre 5.</p>
+</div>
+
+    <div class="container" id="reponseC">
+    <h1>Réponse à l'énigme C</h1>
+    <p>Voici la réponse à l'énigme C: Certaines pièces comportent des oiseaux. Si on les compte, on obtient le chiffre 7.</p>
+</div>
+
+       <div class="container" id="reponseD">
+    <h1>Réponse à l'énigme D</h1>
+    <p>Voici la réponse à l'énigme D: Nous pouvons aperçevoir sur le miroir le chiffre 9.</p>
+</div>
+
+      <div class="container" id="reponseE">
+    <h1>Réponse à l'énigme E</h1>
+    <p>Voici la réponse à l'énigme E: Les gardiens nous avaient indiqués que le bijou avait 8 rubis. Si on suit l'ordre des cartes, le code est 9875.</p>
+</div>
+
+
+<!-- Ajoutez d'autres conteneurs pour les énigmes C, D, et E ici -->
+
+<script>
+    var enigme = prompt("Pour quelle énigme souhaitez-vous un indice? (A, B, C, D, E)");
+
+    switch (enigme.toUpperCase()) {
+        case "A":
+            document.getElementById('reponseA').style.display = 'block';
+            break;
+        case "B":
+            document.getElementById('reponseB').style.display = 'block';
+            break;
+             case "C":
+            document.getElementById('reponseC').style.display = 'block';
+            break;
+             case "D":
+            document.getElementById('reponseD').style.display = 'block';
+            break;
+             case "E":
+            document.getElementById('reponseE').style.display = 'block';
+            break;
+        // Ajoutez d'autres cas pour les énigmes C, D, et E ici
+        default:
+            alert("Énigme non reconnue. Assurez-vous de taper correctement la lettre de l'énigme en majuscule : A,B,C,D ou E.");
+            break;
+    }
+</script>
+
+</body>
+</html>
+<script>
+  var enigme = prompt("Entrez le nom de l'énigme (par exemple: enigme A, enigme B):");
+
+switch (enigme.toLowerCase()) {
+    case "enigme a":
+        document.getElementById('reponseA').style.display = 'block';
+        break;
+    case "enigme b":
+        document.getElementById('reponseB').style.display = 'block';
+        break;
+    // Vous pouvez ajouter d'autres cas pour d'autres énigmes ici
+    default:
+        alert("Énigme non reconnue. Assurez-vous de taper correctement le nom de l'énigme.");
+        break;
+}
+
+</script>
+</script>
