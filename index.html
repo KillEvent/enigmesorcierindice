@@ -82,6 +82,50 @@
 <!-- Ajoutez d'autres conteneurs pour les énigmes C, D, et E ici -->
 
 
+<script>
+    var enigme = prompt("Salut, c'est Sebastian, je peux t'aider à trouver le coupable! Pour me parler, tu dois taper, REVELIO ci dessous.");
+
+    switch (enigme.toUpperCase()) {
+        case "REVELIO":
+            document.getElementById('reponseA').style.display = 'block';
+            break;
+        case "ROUGE":
+            document.getElementById('reponseB').style.display = 'block';
+            break;
+             case "BLEU":
+            document.getElementById('reponseC').style.display = 'block';
+            break;
+             case NOIR":
+            document.getElementById('reponseD').style.display = 'block';
+            break;
+             case "ORANGE":
+            document.getElementById('reponseE').style.display = 'block';
+            break;
+              case "JAUNE":
+            document.getElementById('reponseF').style.display = 'block';
+            break;  
+                case "VERT":
+            document.getElementById('reponseG').style.display = 'block';
+            break; 
+                case "ROSE":
+            document.getElementById('reponseH').style.display = 'block';
+            break; 
+                case "MARRON":
+            document.getElementById('reponseI').style.display = 'block';
+            break;
+            case "BLANC":
+            document.getElementById('reponseJ').style.display = 'block';
+            break;
+            case "BORDEAU":
+            document.getElementById('reponseK').style.display = 'block';
+            break;
+        // Ajoutez d'autres cas pour les énigmes C, D, et E ici
+        default:
+            alert("Le sort n'est pas reconnu... Assure toi de bien taper la couleur pour laquelle tu n'as pas trouvé la lettre : ROUGE, BLEU, VERT, MARRON...");
+            break;
+    }
+</script>
+
 </body>
 </html>
 
