@@ -24,9 +24,10 @@
 
 <div class="container" id="reponseA">
     <h1>REVELIO</h1>
-    <p>Chaque points de couleurs correspond à une lettre. Je suis sûr que les indices dans l'enveloppe t'aideront à trouver toutes les lettres. Si une couleur te pose problème, écris la en entier dans la barre de recherche pour avoir la solution associé.</p>
+    <p>Chaque point de couleur correspond à une lettre. Utilisez les indices dans l'enveloppe pour trouver toutes les lettres. En cas de doute sur une couleur, recherchez-la pour obtenir la solution associée.</p>
 </div>
 
+<!-- Les autres conteneurs pour les énigmes B à K, similaires à reponseA, peuvent être ajoutés ici -->
 <div class="container" id="reponseB">
     <h1>Rouge</h1>
     <p>En utilisant le code international de la langue des serpents, nous pouvons traduire le mot "SaatheAaahAayaaYaatheeHass" par haine. Haine, peut aussi être la lettre N phonétiquement parlant.
@@ -78,57 +79,24 @@
     <p>Le courrier de Sebastian nous explique clairement que le sort se termine par un "S". La dixième lettre est donc un "S".</p>
 </div>
 
+<script>
+    var enigme = prompt("Salut, c'est Sebastian, je peux t'aider à trouver le coupable! Tapez REVELIO ci-dessous.");
 
-<!-- Ajoutez d'autres conteneurs pour les énigmes C, D, et E ici -->
+    function afficherReponse(enigme) {
+        var reponseId = 'reponse' + enigme.charAt(0).toUpperCase() + enigme.slice(1);
+        var reponseElement = document.getElementById(reponseId);
+        if(reponseElement) {
+            reponseElement.style.display = 'block';
+        } else {
+            alert("Énigme non reconnue. Assurez-vous de taper correctement le nom de l'énigme.");
+        }
+    }
 
-
-
+    afficherReponse(enigme.toLowerCase());
+</script>
 </body>
 </html>
-<script>
-    
-       var enigme = prompt("Salut, c'est Sebastian, je peux t'aider à trouver le coupable! Pour me parler, tu dois taper, REVELIO ci dessous.");
 
-switch (enigme.toLowerCase()) {
-    case "revelio":
-        document.getElementById('reponseA').style.display = 'block';
-        break;
-    case "rouge":
-        document.getElementById('reponseB').style.display = 'block';
-        break;
-         case "bleu":
-        document.getElementById('reponseC').style.display = 'block';
-        break;
-         case "noir":
-        document.getElementById('reponseD').style.display = 'block';
-        break;
-         case "orange":
-        document.getElementById('reponseE').style.display = 'block';
-        break;
-         case "jaune":
-        document.getElementById('reponseF').style.display = 'block';
-        break;
-         case "vert":
-        document.getElementById('reponseG').style.display = 'block';
-        break;
-         case "rose":
-        document.getElementById('reponseH').style.display = 'block';
-        break;
-         case "marron":
-        document.getElementById('reponseI').style.display = 'block';
-        break;
-    case "gris":
-        document.getElementById('reponseJ').style.display = 'block';
-        break; 
-    case bordeau":
-        document.getElementById('reponseK').style.display = 'block';
-        break;
-    // Vous pouvez ajouter d'autres cas pour d'autres énigmes ici
-    default:
-        alert("Énigme non reconnue. Assurez-vous de taper correctement le nom de l'énigme.");
-        break;
-}
-</script>
 
 
 
